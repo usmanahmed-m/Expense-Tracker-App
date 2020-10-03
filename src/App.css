@@ -1,38 +1,95 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  
+}
+
+
+h1 {
+  height: 10vh;
+  text-align: center;
+  font-weight: 500;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+}
+
+#main-app {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#app-history {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#current-balance{
+  text-align: center;
+  margin: 3%;
+}
+
+#income,#expense{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#form-heading {
+  margin: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input{
+  margin: 2% 2% 2% 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#history-banner{
+  margin: 5%;
+}
+
+#history{
+  list-style-type: none;
+}
+
+#li{
+  width: 350px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+#delete-button{
+  padding: 4px;
+  margin: 0;
+  background-color: tomato;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#submit{
+  padding: 5px 37px;
+  background-color: steelblue;
+  color: white;
+  text-decoration: none;
 }
